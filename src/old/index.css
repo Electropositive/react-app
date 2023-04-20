@@ -1,0 +1,249 @@
+:root {
+  --background: #2b2b2b;
+  --text: #fff;
+
+  --materialbar-background: rgb(189, 0, 0);
+
+  --navbar-text: #fff;
+  --navbar-active-text: #00bdec;
+  --navbar-background: #1f1f1f;
+  --navbar-link-text: #fff;
+
+  --heading: #42c248;
+  --article-head: #fff;
+  --article-border: #36ffbc;
+  --accordion-homepage-content: #fff;
+  --accordion-homepage-background: #1f1f1f;
+}
+
+/* width */
+::-webkit-scrollbar {
+  background: transparent;
+  height: 0.65rem;
+  width: 0.65rem;
+  border: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* background: var(--primary-color); */
+  background-clip: content-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+/* TODO: fix-cursor */
+/* .cursor {
+  position: absolute;  so it is out of the flow 
+  width: 20px;
+  height: 20px;
+  background: white;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);  so it is center with the cursor pointer 
+  transition: 200ms ease-out;
+} */
+
+
+body {
+  /* //TODO: fix-cursor */
+  /* background: #f7ece1;
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+  cursor: none;
+  overflow-x: hidden; */
+
+  padding: 0;
+  border: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+header{
+  background-color: #1f1f1f;
+}
+
+div {
+  outline: none;
+}
+
+.material-bar {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Google Sans Text", Roboto, "Helvetica Neue", Helvetica,sans-serif;
+  line-height: 1.25rem;
+  background-color: #cc1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 8px;
+}
+
+.material-bar-left {
+  line-height: 1.25rem;
+  font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  /* font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    line-height: 48px; */
+  /* margin-bottom: 2px; */
+  color: rgba(255, 255, 255, 0.87);
+  opacity: 1;
+  overflow: hidden;
+  /* padding-left: 16px; */
+  position: relative;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  /* top: 2px; */
+  white-space: nowrap;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.material-bar-middle {
+  font-family: "Google Sans", "Product Sans", Roboto, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 20px;
+  padding: 0.25em;
+}
+.no-decor-link {
+  color: #fbfeff;
+  text-decoration: none;
+}
+
+.material-bar-right {
+  margin: 0 0.3em;
+  width: fit-content;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.7em;
+}
+
+
+
+
+.material-bar-left {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+  padding: 12px;
+  overflow: hidden;
+  vertical-align: middle;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  -webkit-user-select: none;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+
+.navbar {
+  padding: 0.5rem 0 0;
+  min-height: 3rem;
+  font-family: "Google Sans", "Google Sans Text", Roboto, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1875rem solid #a8c7fa;
+  color: var(--navbar-active-text);
+  padding: 0.5rem 1rem 0;
+}
+
+.navbar-left {
+  box-sizing: border-box;
+  text-align: center;
+}
+.navbar-link {
+  font-size: 0.875rem;
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  line-height: 2.75rem;
+  padding: 0.125rem 0.5rem 0;
+}
+
+
+.navbar-right{
+  padding: 0 1rem;
+}
+
+
+.header-container{
+  /* background-image: url(https://cdn.discordapp.com/attachments/1096151889453776966/1096152477654581388/349967.png); */
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin-top: 1.5rem;
+  height: 19.0625rem;
+}
+.header-container-title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 1.625rem;
+  padding: 0;
+  text-align: center;
+  color: #42c248;
+  font-family: "Google Sans", "Google Sans Text", Roboto, sans-serif;
+}
+.logo-container {
+background: #1f1f1f;
+border-radius: 1.75rem;
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.6), 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+box-sizing: border-box;
+display: flex;
+height: 3.5rem;
+margin: 0 auto 1.125rem auto;
+padding: 0.5rem;
+width: 3.5rem;
+}
+
+.header-cards{
+  display: flex;
+  background:rgba(0, 0, 0, 0.3);
+  width: 95%;
+  height: 13rem;
+  border-radius: 1.75rem;
+  margin:0 1.75rem 0 1.75rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  overflow-x: scroll;
+  overflow-y: hidden; /*used because of extra 2px border in header-card*/
+}
+
+.header-card{
+  font-family: "Google Sans Text", Roboto, "Helvetica Neue", Helvetica,sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c5c5c59e;
+  /* background: #2b2b2b; */
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10%;
+  border-color: #2b2b2b;
+  height: 100%;
+  aspect-ratio: 1/1;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
